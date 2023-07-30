@@ -6,6 +6,8 @@ from book_maker.translator.google_translator import Google
 from book_maker.translator.gpt3_translator import GPT3
 from book_maker.translator.gpt4_translator import GPT4
 from book_maker.translator.claude_translator import Claude
+from book_maker.translator.gpt4_rewriter import GPT4Rewriter
+from book_maker.translator.gpt3_rewriter import GPT3Rewriter
 
 MODEL_DICT = {
     "chatgptapi": ChatGPTAPI,
@@ -16,5 +18,7 @@ MODEL_DICT = {
     "deeplfree": DeepLFree,
     "gpt4": GPT4,
     "claude": Claude,
+    "gpt4_rewriter": GPT4Rewriter,
+    "gpt3_rewriter": GPT3Rewriter,
     # add more here
 }
